@@ -1,0 +1,19 @@
+module "cognitive_speech" {
+  source                          = "../test"
+  resource_group_name             = var.resource_group_name
+  location                        = var.location
+  account_name                    = var.account_name
+  kind                            = var.kind
+  sku_name                        = var.sku_name
+  record_name                     = var.record_name
+  account_tier                    = var.account_tier
+  account_replication_type        = var.account_replication_type
+  subnet_name                     = var.subnet_name
+  vnet_name                       = var.vnet_name
+  enable_private_endpoint         = var.enable_private_endpoint
+  public_network_access_enabled   = var.public_network_access_enabled
+  private_service_connection_name = var.private_service_connection_name
+  pvt_dns_zone_name               = var.pvt_dns_zone_name
+  sub_resource_name               = var.sub_resource_name
+  tags = var.tags
+}
